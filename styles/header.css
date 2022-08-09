@@ -1,0 +1,114 @@
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 57px;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(214, 214, 214);
+}
+
+.header-left-section{
+    width: 170px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger-menu{
+    width: 24px;
+    margin-left: 24px;
+}
+
+.youtube-logo{
+    width: 90px;
+}
+
+.header-middle-section{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    max-width: 470px;
+    margin-left: 55px;
+    margin-right: 35px;
+}
+
+.header-searchbar{
+    flex: 1;
+    width: 0;
+    height: 36px;
+    font-size: 17px;
+    border-radius: 2px;
+    border-color: rgba(204, 204, 204);
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: inset 1px 1px 5px rgb(0, 0, 0, 0.1);
+    padding-left: 10px;
+}
+
+.header-searchbar::placeholder{
+    font-size: 16px;
+}
+
+.search-button{
+    width: 60px;
+    margin-left: -1px;
+    margin-right: 10px;
+    background-color: rgba(204, 204, 204, 0.2);
+    border-width: 1px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: rgba(204, 204, 204);
+}
+
+.search-button-image{
+    width: 27px;
+    margin-top: 6px;
+}
+
+.voice-search-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(204, 204, 204, 0.25);
+    width: 40px;
+    height: 40px;
+}
+
+.voice-search-button-image{
+    width: 24px;
+}
+
+.header-right-section{
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 26px;
+}
+
+.right-icon{
+    width: 24px;
+}
+
+.profile-icon{
+    width: 32px;
+    border-radius: 16px;
+}
