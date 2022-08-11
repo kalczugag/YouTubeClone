@@ -107,6 +107,7 @@
 
 .right-icon{
     width: 24px;
+    vertical-align: middle;
 }
 
 .notifications-container{
