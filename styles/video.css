@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 16px;
-    row-gap: 16px;
+    row-gap: 34px;
     padding: 20px;
 }
 
@@ -11,8 +11,23 @@
     cursor: pointer;
 }
 
+.video-thumbnail-container{
+    position: relative;
+}
+
 .thumbnail{
     width: 100%;
+}
+
+.video-time{
+    background-color: black;
+    color: white;    
+    font-size: 12px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 11px;
+    right: 5px;
+    padding: 4px;
 }
 
 .video-info-grid{
