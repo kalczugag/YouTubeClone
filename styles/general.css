@@ -2,8 +2,9 @@ body{
     margin: 0;
     font-family: Roboto, Arial;
     padding-bottom: 1000px;
-    padding-top: 60px;
-    padding-left: 80px;
+    padding-top: 61px;
+    padding-left: 76px;
+    padding-right: 4px;
 }
 
 p{

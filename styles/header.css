@@ -66,6 +66,7 @@
 
 .search-button{
     width: 60px;
+    height: 100%;
     margin-left: -1px;
     margin-right: 10px;
     background-color: rgba(204, 204, 204, 0.2);
@@ -75,15 +76,61 @@
     border-color: rgba(204, 204, 204);
 }
 
+.search-button:hover{
+    background-color: rgb(228, 228, 228, 0.6);
+}
+
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.apps-icon-container,
+.notifications-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.apps-icon-container .tooltip,
+.notifications-container .tooltip{
+    position: absolute;
+    background-color: rgb(107, 107, 107);
+    color: white;
+    font-size: 12px;
+    padding: 12px 8px;
+    border-radius: 4px;
+    top: 65px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.1s;
+}
+
+.upload-icon-container .tooltip,
+.apps-icon-container .tooltip{
+    top: 58px;
+}
+
+.notifications-container .tooltip{
+    top: 40px;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.apps-icon-container:hover .tooltip,
+.notifications-container:hover .tooltip{
+    opacity: 0.9;
+}
+
 .search-button-image{
     width: 27px;
     margin-top: 6px;
 }
 
 .voice-search-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 20px;
     border: none;
     background-color: rgba(204, 204, 204, 0.25);
@@ -130,4 +177,8 @@
 .profile-icon{
     width: 32px;
     border-radius: 16px;
+}
+
+.profile-icon-container{
+    cursor: pointer;
 }
