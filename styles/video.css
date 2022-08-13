@@ -6,9 +6,13 @@
     padding: 20px;
 }
 
+.video-grid a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
 .video-card{
     vertical-align: top;
-    cursor: pointer;
 }
 
 .video-thumbnail-container{
@@ -59,4 +63,8 @@
 .channel-name, .video-stats{
     font-size: 12px;
     color: gray;
+}
+
+.channel-name:hover{
+    opacity: 0.8;
 }
