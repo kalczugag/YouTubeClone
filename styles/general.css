@@ -1,12 +1,27 @@
-body{
-    margin: 0;
-    font-family: Roboto, Arial;
-    padding-bottom: 1000px;
-    padding-top: 61px;
-    padding-left: 76px;
-    padding-right: 4px;
+body {
+  margin: 0;
+  font-family: Roboto, Arial;
+  padding-bottom: 1000px;
+  padding-top: 61px;
+  padding-left: 76px;
+  padding-right: 4px;
 }
 
-p{
-    margin: 0;
+p {
+  margin: 0;
+}
+
+@media print {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 100px;
+    z-index: 999;
+  }
 }

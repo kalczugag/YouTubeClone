@@ -1,70 +1,92 @@
-.video-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 16px;
-    row-gap: 34px;
-    padding: 20px;
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 34px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
 }
 
-.video-grid a{
-    color: inherit;
-    text-decoration: inherit;
+.video-grid a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
-.video-card{
-    vertical-align: top;
+.video-card {
+  vertical-align: top;
 }
 
-.video-thumbnail-container{
-    position: relative;
+.video-thumbnail-container {
+  position: relative;
 }
 
-.thumbnail{
-    width: 100%;
+.thumbnail {
+  width: 100%;
 }
 
-.video-time{
-    background-color: black;
-    color: white;    
-    font-size: 12px;
-    font-weight: 500;
-    position: absolute;
-    bottom: 11px;
-    right: 5px;
-    padding: 4px;
+.video-time {
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 11px;
+  right: 5px;
+  padding: 4px;
 }
 
-.video-info-grid{
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    padding-top: 8px;
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  padding-top: 8px;
 }
 
-.channel-profile-picture{
-    vertical-align: top;
-    width: 48px;
+.channel-profile-picture {
+  vertical-align: top;
+  width: 48px;
 }
 
-.channel-profile-icon{
-    width: 36px;
-    border-radius: 20px;
+.channel-profile-icon {
+  width: 36px;
+  border-radius: 20px;
 }
 
-.video-info{
-    vertical-align: top;
-    line-height: 20px;
+.video-info {
+  vertical-align: top;
+  line-height: 20px;
 }
 
-.video-title{
-    font-size: 14px;
-    margin-bottom: 10px;
+.video-title {
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
-.channel-name, .video-stats{
-    font-size: 12px;
-    color: gray;
+.channel-name,
+.video-stats {
+  font-size: 12px;
+  color: gray;
 }
 
-.channel-name:hover{
-    color: rgb(65, 65, 65);
+.channel-name:hover {
+  color: rgb(65, 65, 65);
+}
+
+@media all and (max-width: 1100px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
 }
