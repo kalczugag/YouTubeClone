@@ -207,6 +207,7 @@
         flex: 1;
     }
 
-    .youtube-logo {
+    .search-button:hover .tooltip {
+        display: none;
     }
 }
